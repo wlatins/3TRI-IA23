@@ -1,0 +1,35 @@
+body {
+    background-color: lightgray;
+}
+
+nav {
+    background-color: lightblue;
+}
+
+nav > ul {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+nav ul,
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul > li {
+    list-style: none;
+    border: 1px solid lightslategray;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav > ul > li > ul {
+    display: none;
+}
+
+nav > ul > li:hover > ul {
+    display: block;
+}
