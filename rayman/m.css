@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #dca305;
+    border-radius: 20px;
+    border: 3px solid rgb(0, 0, 0);
+  }
+
+  .logo {
+    background: url('logo.png');
+    height: 10rem;
+    width: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 68.5rem;
+    
+  }
+  
+  #menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #dca305;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0%;
+    height: 0%;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #dca305, #dca305);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: black;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 660px;
+    height: 660px;
+    transform: translate(-60%,-30%);
+  }
+
+  .titulo {
+    color: white;
+    font-size: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    color: white;
+    font-size: 30px;
+    margin-left: 60px;
+  }
+
+  p {
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-left: 60px;
+  }
+
+  video {
+    align-items: center;
+    width: 500px;
+  }
+
+  dialog {
+    background-color: black;
+  }
+
+  button {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #dca305;
+    cursor: pointer;
+    border: solid;
+  }
+
+  .castleimg {
+    background: url('castle.png');
+    cursor: pointer;
+    width: 280px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5rem;
+  }
+
+  .castle8bitimg {
+    background: url('castle8bit.png');
+    cursor: pointer;
+    width: 280px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 35rem;
+  }
+
+  .firstimg {
+    display: flex;
+    align-items: center;
+  }
+
+  .chaosimg {
+    background: url('chaos.png');
+    cursor: pointer;
+    width: 280px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5rem;
+  }
+
+  .chaos8bitimg {
+    background: url('chaos8bit.png');
+    cursor: pointer;
+    width: 280px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 35rem;
+  }
+
+  .secondimg {
+    display: flex;
+    align-items: center;
+  }
+
+  .madimg {
+    background: url('mad.jpg');
+    cursor: pointer;
+    width: 280px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5rem;
+  }
+
+  .mad8bitimg {
+    background: url('mad8bit.png');
+    cursor: pointer;
+    width: 280px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 35rem;
+  }
+
+  .thirdimg {
+    display: flex;
+    align-items: center;
+  }
+
+  .glooimg {
+    background: url('gloo.png');
+    cursor: pointer;
+    width: 280px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5rem;
+  }
+
+  .gloo8bitimg {
+    background: url('gloo8bit.png');
+    cursor: pointer;
+    width: 280px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 35rem;
+  }
+
+  .fourthimg {
+    display: flex;
+    align-items: center;
+  }
+
+  .draimg {
+    background: url('dra.png');
+    background-position: center;
+    cursor: pointer;
+    width: 280px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5rem;
+  }
+
+  .dra8bitimg {
+    background: url('dra8bit.png');
+    background-position: center;
+    cursor: pointer;
+    width: 280px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 35rem;
+  }
+
+  .fifthimg {
+    display: flex;
+    align-items: center;
+  }
+
+  .grannieimg {
+    background: url('grannie.png');
+    background-position: center;
+    cursor: pointer;
+    width: 280px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5rem;
+  }
+
+  .grannie8bitimg {
+    background: url('grannie8bit.png');
+    background-position: center;
+    cursor: pointer;
+    width: 280px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 35rem;
+  }
+
+  .sixthimg {
+    display: flex;
+    align-items: center;
+  }
+
